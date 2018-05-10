@@ -9,8 +9,10 @@ app.get('/',function(req,res){
 app.get('/api/articles',function(req,res){
 
 	var myArticle = new articleModel({
-		title: "Mi articulo",
-		description: "Mi description",
+		titulo: "Mi articulo",
+		entradilla: "Mi description",
+		categoria: "Mi categoria",
+		votos: 0,
 		url: "mi url"
 	})
 

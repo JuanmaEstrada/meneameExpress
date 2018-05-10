@@ -1,9 +1,11 @@
 const {mongoose} = require("../index")
 
 const articleSchema = mongoose.Schema({
-		title: String,
-		description: String,
-		url: String
+		titulo: String,
+		entradilla: String,
+		categoria: String,
+		url: String,
+		votos: Number
 })
 
 let articleModel = mongoose.model("Article", articleSchema)
